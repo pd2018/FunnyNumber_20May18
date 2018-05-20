@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Number-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunnyNumber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Number" id="BYZ-38-t0r" customClass="ViewController" customModule="FunnyNumber" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,16 +51,32 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OP1-Ud-5QS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Number" id="1f7-0c-ld3">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="p4U-Ye-gd2"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Thai Number" id="lPk-Nh-6yq">
+                                            <connections>
+                                                <segue destination="rPR-VH-eRc" kind="show" id="Bns-1q-cq2"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QMp-bV-6H3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0V0-h7-ggT"/>
+                            <constraint firstItem="OP1-Ud-5QS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1a5-5l-r0G"/>
+                            <constraint firstItem="OP1-Ud-5QS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3TV-L4-aJA"/>
                             <constraint firstItem="QMp-bV-6H3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KFQ-n8-NCz"/>
                             <constraint firstItem="MYT-SJ-djq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mj5-RD-GPJ"/>
                             <constraint firstItem="fTH-Dz-a5h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N9b-zj-fJu"/>
                             <constraint firstItem="fTH-Dz-a5h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WYu-RD-Gq9"/>
                             <constraint firstItem="MYT-SJ-djq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Y1z-pr-7Ww"/>
                             <constraint firstItem="fTH-Dz-a5h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZQ2-QQ-HjZ"/>
+                            <constraint firstItem="OP1-Ud-5QS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aea-5W-x0X"/>
                             <constraint firstItem="MYT-SJ-djq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pkF-aE-lo3"/>
                             <constraint firstItem="QMp-bV-6H3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qFL-fR-vGs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fTH-Dz-a5h" secondAttribute="trailing" id="qXg-JQ-Tdl"/>
@@ -76,8 +92,44 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
+        <!--ThaiNumber-->
+        <scene sceneID="jFw-IY-UVY">
+            <objects>
+                <viewController title="ThaiNumber" id="rPR-VH-eRc" customClass="ThaiNumberViewController" customModule="FunnyNumber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ojX-cE-W26">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg22.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kPx-9e-o3q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LnF-6T-liI">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Thai Number" id="9va-mG-qa8">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="baseline_keyboard_arrow_left_black_18dp.png" id="a0g-7h-hZT">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="xhg-Sb-7u0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="a8o-Uw-UYx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xTK-ia-ucU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="116.49175412293854"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="baseline_keyboard_arrow_left_black_18dp.png" width="36" height="36"/>
+        <image name="bg22.jpg" width="1040" height="1511"/>
         <image name="bgsmall.jpg" width="1024" height="1364"/>
     </resources>
 </document>
