@@ -55,7 +55,11 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Number" id="1f7-0c-ld3">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="p4U-Ye-gd2"/>
+                                        <barButtonItem key="leftBarButtonItem" title="AUTO" id="p4U-Ye-gd2">
+                                            <connections>
+                                                <action selector="autoBtn:" destination="BYZ-38-t0r" id="PgL-uK-YjN"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Thai Number" id="lPk-Nh-6yq">
                                             <connections>
                                                 <segue destination="rPR-VH-eRc" kind="show" id="Bns-1q-cq2"/>
@@ -86,6 +90,7 @@
                     </view>
                     <connections>
                         <outlet property="numberLabel" destination="fTH-Dz-a5h" id="JK1-7J-QPl"/>
+                        <outlet property="showStopBtn" destination="p4U-Ye-gd2" id="bcU-fN-Nsg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -10,6 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
     
+//    Explicit
+    var statusBol: Bool = true
+    var LabelStrings = ["AUTO", "STOP"]
+    
+    
+    
+    
+    
+    
+    
+    @IBAction func autoBtn(_ sender: UIBarButtonItem) {
+// Switch Label
+        if statusBol {
+            showStopBtn.title = LabelStrings[1]
+        }else{
+            showStopBtn.title = LabelStrings[0]
+        }
+     statusBol = !statusBol
+        
+        
+    }
+    
+    
+    @IBOutlet weak var showStopBtn: UIBarButtonItem!
+    
+    
 //    เริ่มตรงนี้
     
     @IBOutlet weak var numberLabel: UILabel!

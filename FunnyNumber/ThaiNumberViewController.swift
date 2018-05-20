@@ -37,11 +37,24 @@ class ThaiNumberViewController: UIViewController {
     
     @IBAction func setOne(_ sender: UIBarButtonItem) {
         print(thaiClass.checkClick(keyString: "One"))
+        
+        thaiClass.indexInt = 0
+        numberLabel.text = thaiClass.showNumber()
     }
     
     
     @IBAction func incBtn(_ sender: UIBarButtonItem) {
         print(thaiClass.checkClick(keyString: "Inc"))
+        var incNumberInt = thaiClass.indexInt
+        incNumberInt = incNumberInt + 1
+        if incNumberInt > (thaiClass.numberStrings.count - 1) {
+            incNumberInt = 0
+        }
+       thaiClass.indexInt = incNumberInt
+        print("Current index ==> \(thaiClass.indexInt)")
+        
+        numberLabel.text = thaiClass.showNumber()
+        
         
         
         
