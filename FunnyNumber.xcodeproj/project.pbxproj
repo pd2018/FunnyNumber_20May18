@@ -17,6 +17,7 @@
 		CC1FA3D020B134DA0007B537 /* ThaiNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1FA3CF20B134DA0007B537 /* ThaiNumberViewController.swift */; };
 		CC1FA3D220B13F4D0007B537 /* bg22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC1FA3D120B13F4D0007B537 /* bg22.jpg */; };
 		CC1FA3D420B1437F0007B537 /* baseline_keyboard_arrow_left_black_18dp.png in Resources */ = {isa = PBXBuildFile; fileRef = CC1FA3D320B1437F0007B537 /* baseline_keyboard_arrow_left_black_18dp.png */; };
+		CC1FA3D620B149B30007B537 /* ThaiClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1FA3D520B149B30007B537 /* ThaiClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CC1FA3CF20B134DA0007B537 /* ThaiNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiNumberViewController.swift; sourceTree = "<group>"; };
 		CC1FA3D120B13F4D0007B537 /* bg22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg22.jpg; sourceTree = "<group>"; };
 		CC1FA3D320B1437F0007B537 /* baseline_keyboard_arrow_left_black_18dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_keyboard_arrow_left_black_18dp.png; sourceTree = "<group>"; };
+		CC1FA3D520B149B30007B537 /* ThaiClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				CC1FA3C520B11C500007B537 /* Info.plist */,
 				CC1FA3CD20B127230007B537 /* MyClass.swift */,
 				CC1FA3CF20B134DA0007B537 /* ThaiNumberViewController.swift */,
+				CC1FA3D520B149B30007B537 /* ThaiClass.swift */,
 			);
 			path = FunnyNumber;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				CC1FA3BC20B11C4E0007B537 /* ViewController.swift in Sources */,
 				CC1FA3BA20B11C4E0007B537 /* AppDelegate.swift in Sources */,
 				CC1FA3CE20B127240007B537 /* MyClass.swift in Sources */,
+				CC1FA3D620B149B30007B537 /* ThaiClass.swift in Sources */,
 				CC1FA3D020B134DA0007B537 /* ThaiNumberViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

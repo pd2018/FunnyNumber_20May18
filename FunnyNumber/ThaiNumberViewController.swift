@@ -9,6 +9,44 @@
 import UIKit
 
 class ThaiNumberViewController: UIViewController {
+    
+//    Implicit
+    var thaiClass = ThaiClass()
+    
+    
+    @IBOutlet weak var numberLabel: UILabel!
+    
+    
+    @IBAction func decBtn(_ sender: UIBarButtonItem) {
+        
+        let reultString: String = thaiClass.checkClick(keyString: "Dec")
+        print(reultString)
+        
+        var decIndexInt = thaiClass.indexInt
+        decIndexInt = decIndexInt - 1
+        if decIndexInt < 0 {
+            decIndexInt = thaiClass.numberStrings.count - 1
+            
+        }
+       thaiClass.indexInt = decIndexInt
+        print("Current index ==> \(thaiClass.indexInt)")
+        numberLabel.text = thaiClass.showNumber()
+    }
+    
+    
+    
+    @IBAction func setOne(_ sender: UIBarButtonItem) {
+        print(thaiClass.checkClick(keyString: "One"))
+    }
+    
+    
+    @IBAction func incBtn(_ sender: UIBarButtonItem) {
+        print(thaiClass.checkClick(keyString: "Inc"))
+        
+        
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,4 +70,4 @@ class ThaiNumberViewController: UIViewController {
     }
     */
 
-}
+} // ThaiNumber Class
