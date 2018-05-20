@@ -18,16 +18,40 @@ class ViewController: UIViewController {
     @IBAction func decBtn(_ sender: UIBarButtonItem) {
         showClick(nameButtom: "decBtn")
         
+        let myClass = MyClass()
+        
+        let currentNumberInt: Int = Int(numberLabel.text!)!
+        
+        let resultNumberInt : Int = myClass.decreseNumber(numberInt: currentNumberInt)
+        
+        let resultString = String(resultNumberInt)
+        
+        numberLabel.text = resultString
+        
     }
     
     
     @IBAction func startOneBtn(_ sender: UIBarButtonItem) {
-        showClick(nameButtom: "startOne")
+        showClick(nameButtom: "startOneBtn")
+        let myClass = MyClass()
+        numberLabel.text = myClass.startOne()
+        
     }
     
     
     @IBAction func incBtn(_ sender: UIBarButtonItem) {
         showClick(nameButtom: "incBtn")
+        
+        let myClass = MyClass()
+        let currentNumberString: String = numberLabel.text!
+        let resultString: String = myClass.increaseNumber(numberString: currentNumberString)
+        
+        numberLabel.text = resultString
+        
+        
+        
+
+        
     }
     
     
