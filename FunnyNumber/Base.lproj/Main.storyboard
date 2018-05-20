@@ -100,13 +100,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg22.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kPx-9e-o3q">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg22.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kPx-9e-o3q">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LnF-6T-liI">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LnF-6T-liI">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Thai Number" id="9va-mG-qa8">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="baseline_keyboard_arrow_left_black_18dp.png" id="a0g-7h-hZT">
@@ -117,8 +115,39 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="หนึ่ง" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nf5-1H-1jv">
+                                <rect key="frame" x="0.0" y="126" width="375" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5Z-eI-6va">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="JmU-lC-Vsi"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Re9-Qq-ykg"/>
+                                    <barButtonItem title="หนึ่ง" id="eCY-PF-zfM"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Bwj-lR-KJ3"/>
+                                    <barButtonItem systemItem="fastForward" id="s0O-4h-3LJ"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j5Z-eI-6va" firstAttribute="trailing" secondItem="a8o-Uw-UYx" secondAttribute="trailing" id="2rP-3d-hdC"/>
+                            <constraint firstItem="LnF-6T-liI" firstAttribute="top" secondItem="a8o-Uw-UYx" secondAttribute="top" constant="8" id="6uI-gI-KS8"/>
+                            <constraint firstItem="nf5-1H-1jv" firstAttribute="trailing" secondItem="a8o-Uw-UYx" secondAttribute="trailing" id="7oV-r4-oo7"/>
+                            <constraint firstItem="j5Z-eI-6va" firstAttribute="bottom" secondItem="a8o-Uw-UYx" secondAttribute="bottom" id="AaW-Vc-Q47"/>
+                            <constraint firstItem="LnF-6T-liI" firstAttribute="trailing" secondItem="a8o-Uw-UYx" secondAttribute="trailing" id="AhE-ll-ffq"/>
+                            <constraint firstItem="kPx-9e-o3q" firstAttribute="leading" secondItem="a8o-Uw-UYx" secondAttribute="leading" id="DTH-rw-ClW"/>
+                            <constraint firstItem="j5Z-eI-6va" firstAttribute="leading" secondItem="a8o-Uw-UYx" secondAttribute="leading" id="HEA-Mc-JXy"/>
+                            <constraint firstItem="nf5-1H-1jv" firstAttribute="leading" secondItem="a8o-Uw-UYx" secondAttribute="leading" id="UTW-hU-XFA"/>
+                            <constraint firstItem="kPx-9e-o3q" firstAttribute="bottom" secondItem="a8o-Uw-UYx" secondAttribute="bottom" id="aJB-Jf-ikd"/>
+                            <constraint firstItem="kPx-9e-o3q" firstAttribute="top" secondItem="ojX-cE-W26" secondAttribute="top" id="fMU-vI-lBe"/>
+                            <constraint firstItem="nf5-1H-1jv" firstAttribute="top" secondItem="LnF-6T-liI" secondAttribute="bottom" constant="54" id="oGg-4H-WQE"/>
+                            <constraint firstItem="LnF-6T-liI" firstAttribute="leading" secondItem="a8o-Uw-UYx" secondAttribute="leading" id="xat-ej-Nhl"/>
+                            <constraint firstItem="kPx-9e-o3q" firstAttribute="trailing" secondItem="a8o-Uw-UYx" secondAttribute="trailing" id="yTC-lZ-dno"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="a8o-Uw-UYx"/>
                     </view>
                 </viewController>
