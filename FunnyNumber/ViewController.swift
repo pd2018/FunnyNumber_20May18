@@ -14,18 +14,40 @@ class ViewController: UIViewController {
     var statusBol: Bool = true
     var LabelStrings = ["AUTO", "STOP"]
     
+//    Override Func สำเสร็จรูป
+    var objTime = Timer()
     
     
-    
-    
+    @objc func myRunTimer() -> Void {
+        
+        objTime = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.mySelector), userInfo: nil, repeats: true)
+        
+    }
+    @objc func mySelector() -> Void {
+
+        var startNumberInt: Int = Int(numberLabel.text!)!
+        
+        startNumberInt = startNumberInt + 1
+        
+        numberLabel.text = String(startNumberInt)
+        
+        
+    }
     
     
     @IBAction func autoBtn(_ sender: UIBarButtonItem) {
 // Switch Label
         if statusBol {
             showStopBtn.title = LabelStrings[1]
+//  สั่งให้ตัวเลขวิ่ง
+           myRunTimer()
+            
+            
+            
         }else{
             showStopBtn.title = LabelStrings[0]
+//       สั่งหยุด
+            objTime.invalidate()
         }
      statusBol = !statusBol
         
